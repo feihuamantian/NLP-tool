@@ -5,6 +5,7 @@ About 自然语言处理工具Macropodus，基于Albert+BiLSTM+CRF深度学习�
 时间转换工具：
 github url : https://github.com/zhanzecheng/Time_NLP
 
+pip install arrow==0.14.0
 用于句子中时间词的抽取和转换
 详情请见test.py
 
