@@ -21,6 +21,93 @@ print(res)
 res = tn.parse(target=u'晚上8点到上午10点之间') # target为待分析语句，timeBase为基准时间默认是当前时间
 print(res)
 
+from TimeNormalizer import TimeNormalizer # 引入包
 
+tn = TimeNormalizer()
+
+res = tn.parse(target=u'晚上8点到上午10点之间') # target为待分析语句，timeBase为基准时间默认是当前时间
+print(res)
+
+res = tn.parse(target=u'2013年二月二十八日下午四点三十分二十九秒', timeBase='2013-02-28 16:30:29') # target为待分析语句，timeBase为基准时间默认是当前时间
+print(res)
+
+res = tn.parse(target=u'我需要大概33天2分钟四秒', timeBase='2013-02-28 16:30:29') # target为待分析语句，timeBase为基准时间默认是当前时间
+print(res)
+
+res = tn.parse(target=u'今年儿童节晚上九点一刻') # target为待分析语句，timeBase为基准时间默认是当前时间
+print(res)
+
+res = tn.parse(target=u'三日') # target为待分析语句，timeBase为基准时间默认是当前时间
+print(res)
+
+res = tn.parse(target=u'7点4') # target为待分析语句，timeBase为基准时间默认是当前时间
+print(res)
+
+res = tn.parse(target=u'今年春分')
+print(res)
+
+res = tn.parse(target=u'7000万')
+print(res)
+
+res = tn.parse(target=u'7百')
+print(res)
+
+res = tn.parse(target=u'7千')
+print(res)
+
+#
+#
+#
+# def boson_analy(pattern, basetime):
+#     nlp = BosonNLP('MWSY30Ja.14341.z39Al-kSksZt')
+#     result = nlp.convert_time(
+#         pattern,
+#         datetime.datetime.today())
+#     print (json.dumps(result))
+#     return json.dumps(result)
+#
+# with open('C:/Users/zhm/Desktop/test.txt') as testfile:
+#     data = []
+#     for each in testfile:
+#         res = tn.parse(each, arrow.now())
+#         res_b = boson_analy(each, datetime.datetime.now())
+#         data.append(each+'Boson:'+res_b+'\n'+'Time-NLP:'+res+'\n'+'\n')
+# with open('C:/Users/zhm/Desktop/对比.txt', 'wb') as resfile:
+#     resfile.writelines(data)
+#
+# ### 測試輸出文件
+
+
+# with open('resource/holi_lunar.json') as file_1:
+#     out = json.load(file_1)
+#     print type(out)
+# with open('resource/holi_lunar.json', 'w') as file_out:
+#     print json.dumps(out, indent=2, ensure_ascii=False)
+#     print >> file_out, json.dumps(out, indent=2, ensure_ascii=False).encode('utf-8')
+#
+# with open('resource/holi_lunar.json') as file_out:
+#     print json.load(file_out)
+
+
+# dset = []
+# with open('C:/Users/zhm/Desktop/test.txt') as testfile:
+#     for each in testfile:
+#         dset.append(each)
+#
+# def run(query):
+#     tn = TimeNormalizer()
+#     res = tn.parse(target=query, timeBase='2013-02-28 16:30:29')
+#     print res
+# if __name__ == '__main__':
+#     while True:
+#        query = random.choice(dset)
+#        lp = LineProfiler()
+#        lp_wrapper = lp(run)
+#        lp_wrapper(query)
+#        lp.print_stats()
+#        cProfile.run("run(query)")
+
+# with open(os.path.dirname(__file__) + '/resource/regex.txt', 'wb') as f:
+#     f.write(u'((前|昨|今|明|后)(天|日)?(早|晚)(晨|上|间)?)|(\\d+个?[年月日天][以之]?[前后])|(\\d+个?半?(小时|钟头|h|H))|(半个?(小时|钟头))|(\\d+(分钟|min))|([13]刻钟)|(
 
 
