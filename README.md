@@ -60,6 +60,7 @@ print(res)
 ## （3）反义词搜索
 
 github url：https://github.com/liuhuanyong/ChineseAntiword
+
 word = '天才'
 antiwords:['庸才', '庸人', '蠢材']
 word = '快乐'
