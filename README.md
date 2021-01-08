@@ -1,9 +1,9 @@
 # NLP-tool
-##（1）中文分词，词性标注，命名实体识别，新词发现，关键词，文本摘要，文本相似度，科学计算器，中文数字阿拉伯数字(罗马数字)转换，中文繁简转换，拼音转换。
+## 中文分词，词性标注，命名实体识别，新词发现，关键词，文本摘要，文本相似度，科学计算器，中文数字阿拉伯数字(罗马数字)转换，中文繁简转换，拼音转换。
 github url: https://github.com/yongzhuo/Macropodus
 About 自然语言处理工具Macropodus，基于Albert+BiLSTM+CRF深度学习网络架构，中文分词，词性标注，命名实体识别，新词发现，关键词，文本摘要，文本相似度，科学计算器，中文数字阿拉伯数字(罗马数字)转换，中文繁简转换，拼音转换。
 
-##（2）时间转换工具：
+## （2）时间转换工具：
 github url : https://github.com/zhanzecheng/Time_NLP
 
 pip install arrow==0.14.0
@@ -56,60 +56,3 @@ print(res)
 
 res = tn.parse(target=u'7千')
 print(res)
-
-#
-#
-#
-# def boson_analy(pattern, basetime):
-#     nlp = BosonNLP('MWSY30Ja.14341.z39Al-kSksZt')
-#     result = nlp.convert_time(
-#         pattern,
-#         datetime.datetime.today())
-#     print (json.dumps(result))
-#     return json.dumps(result)
-#
-# with open('C:/Users/zhm/Desktop/test.txt') as testfile:
-#     data = []
-#     for each in testfile:
-#         res = tn.parse(each, arrow.now())
-#         res_b = boson_analy(each, datetime.datetime.now())
-#         data.append(each+'Boson:'+res_b+'\n'+'Time-NLP:'+res+'\n'+'\n')
-# with open('C:/Users/zhm/Desktop/对比.txt', 'wb') as resfile:
-#     resfile.writelines(data)
-#
-# ### 測試輸出文件
-
-
-# with open('resource/holi_lunar.json') as file_1:
-#     out = json.load(file_1)
-#     print type(out)
-# with open('resource/holi_lunar.json', 'w') as file_out:
-#     print json.dumps(out, indent=2, ensure_ascii=False)
-#     print >> file_out, json.dumps(out, indent=2, ensure_ascii=False).encode('utf-8')
-#
-# with open('resource/holi_lunar.json') as file_out:
-#     print json.load(file_out)
-
-
-# dset = []
-# with open('C:/Users/zhm/Desktop/test.txt') as testfile:
-#     for each in testfile:
-#         dset.append(each)
-#
-# def run(query):
-#     tn = TimeNormalizer()
-#     res = tn.parse(target=query, timeBase='2013-02-28 16:30:29')
-#     print res
-# if __name__ == '__main__':
-#     while True:
-#        query = random.choice(dset)
-#        lp = LineProfiler()
-#        lp_wrapper = lp(run)
-#        lp_wrapper(query)
-#        lp.print_stats()
-#        cProfile.run("run(query)")
-
-# with open(os.path.dirname(__file__) + '/resource/regex.txt', 'wb') as f:
-#     f.write(u'((前|昨|今|明|后)(天|日)?(早|晚)(晨|上|间)?)|(\\d+个?[年月日天][以之]?[前后])|(\\d+个?半?(小时|钟头|h|H))|(半个?(小时|钟头))|(\\d+(分钟|min))|([13]刻钟)|(
-
-
