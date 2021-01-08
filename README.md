@@ -1,12 +1,12 @@
 # NLP-tool
-## 中文分词，词性标注，命名实体识别，新词发现，关键词，文本摘要，文本相似度，科学计算器，中文数字阿拉伯数字(罗马数字)转换，中文繁简转换，拼音转换。
+## （1）中文分词，词性标注，命名实体识别，新词发现，关键词，文本摘要，文本相似度，科学计算器，中文数字阿拉伯数字(罗马数字)转换，中文繁简转换，拼音转换。
 github url: https://github.com/yongzhuo/Macropodus
 About 自然语言处理工具Macropodus，基于Albert+BiLSTM+CRF深度学习网络架构，中文分词，词性标注，命名实体识别，新词发现，关键词，文本摘要，文本相似度，科学计算器，中文数字阿拉伯数字(罗马数字)转换，中文繁简转换，拼音转换。
 
 ## （2）时间转换工具：
 github url : https://github.com/zhanzecheng/Time_NLP
 
-pip install arrow==0.14.0
+### pip install arrow==0.14.0
 用于句子中时间词的抽取和转换
 详情请见test.py
 
@@ -56,3 +56,14 @@ print(res)
 
 res = tn.parse(target=u'7千')
 print(res)
+
+## （3）反义词搜索
+github url：https://github.com/liuhuanyong/ChineseAntiword
+word = '天才'
+antiwords:['庸才', '庸人', '蠢材']
+word = '快乐'
+antiwords:['悲伤', '伤心', '难过', '痛苦', '烦恼', '苦恼']
+word = '和蔼'
+antiwords:['凶狠', '凶残', '粗暴', '凶横', '凶恶', '严厉', '蛮横']
+word = '批判'
+antiwords:['表扬', '表彰', '赞颂']
