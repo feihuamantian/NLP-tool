@@ -69,3 +69,6 @@ word = '和蔼'
 antiwords:['凶狠', '凶残', '粗暴', '凶横', '凶恶', '严厉', '蛮横']
 word = '批判'
 antiwords:['表扬', '表彰', '赞颂']
+
+## （4）地址名纠错
+github_url:http://github.com/PyUnit/pyunit-address
