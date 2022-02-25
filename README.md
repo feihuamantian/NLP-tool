@@ -72,3 +72,5 @@ antiwords:['表扬', '表彰', '赞颂']
 
 ## （4）地址名纠错
 github_url:http://github.com/PyUnit/pyunit-address
+## （5）同义词库
+https://github.com/TernenceWind/replaceSynbycilin/blob/master/cilin.txt
